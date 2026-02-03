@@ -54,4 +54,6 @@ A simple web application with a "Hello, world!" message and a button. This docum
 1.  **Purpose:** To resolve an issue where content was being pushed out of view due to overly restrictive `body` styling.
 
 2.  **CSS (`style.css`):**
-    -   Removed `justify-content: center;`, `align-items: center;`, and `height: 100vh;` from the `body` styles. This allows content to flow naturally and prevents it from being centered and potentially cut off, especially when more elements are added to the page.
+    -   Removed `justify-content: center;`, `align-items: center;` from the `body` styles, and changed `height: 100vh;` to `min-height: 100vh;`. This allows content to flow naturally and scroll if it exceeds the viewport height.
+    -   Horizontal centering is now achieved by applying `max-width` and `margin: auto;` to individual block-level content sections (`h1`, main `button`, `.contact-form-section`, `.comment-section`).
+    -   Added `padding-bottom` to the body for better overall spacing.

@@ -16,19 +16,22 @@ body {
   flex-direction: column;
   /* align-items: center; */ /* Removed to allow content to flow */
   /* justify-content: center; */ /* Removed to allow content to flow */
-  /* height: 100vh; */ /* Removed to allow content to scroll naturally */
+  min-height: 100vh; /* Changed from height: 100vh to allow scrolling */
   margin: 0;
+  padding-bottom: 50px; /* Add some padding at the bottom for better spacing */
   transition: background-color 0.3s, color 0.3s;
 }
 
-.theme-switcher {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+h1 {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
 }
 
-#theme-toggle {
-  padding: 8px 12px;
+body > button { /* Target the main "Press me" button */
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
   border: 1px solid var(--text-color);
   background-color: transparent;
   color: var(--text-color);
@@ -37,71 +40,18 @@ body {
 }
 
 .contact-form-section {
-  margin-top: 30px;
+  margin: 20px auto;
   padding: 20px;
   border: 1px solid var(--text-color);
   border-radius: 8px;
-  width: 80%;
-  max-width: 500px;
+  width: 90%; /* Adjust width to be a bit more flexible */
+  max-width: 800px; /* Consistent max-width */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: var(--text-color);
-}
-
-.contact-form .form-group {
-  margin-bottom: 15px;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 5px;
-  color: var(--text-color);
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid var(--text-color);
-  border-radius: 4px;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  box-sizing: border-box; /* Ensures padding doesn't increase total width */
-}
-
-.contact-form textarea {
-  resize: vertical; /* Allow vertical resizing */
-}
-
-.contact-form button[type="submit"] {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: var(--text-color);
-  color: var(--background-color);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button[type="submit"]:hover {
-  opacity: 0.9;
-}
-
 .comment-section {
-  margin-top: 30px;
-  width: 80%;
-  max-width: 800px;
+  margin: 20px auto;
+  width: 90%; /* Adjust width to be a bit more flexible */
+  max-width: 800px; /* Consistent max-width */
   text-align: center;
-}
-
-.comment-section h2 {
-  margin-bottom: 20px;
 }
