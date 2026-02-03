@@ -35,3 +35,12 @@ A simple web application with a "Hello, world!" message and a button. This docum
 
 3.  **CSS (`style.css`):**
     -   Added styles for the `.contact-form-section`, `.contact-form`, `.form-group`, `label`, `input`, `textarea`, and `button[type="submit"]` to ensure a clean and responsive appearance, consistent with the existing theme.
+
+## Disqus Comment Section
+
+1.  **Purpose:** To enable a comment section on the page, powered by Disqus, for user engagement.
+
+2.  **HTML (`index.html`):**
+    -   Added a `<div id="disqus_thread"></div>` element where the comments will be embedded.
+    -   Included the provided Disqus JavaScript snippet, which loads the `embed.js` script from `https://krecipe.disqus.com/embed.js`, responsible for rendering the comment section.
+    -   A `<noscript>` fallback message is also included.
