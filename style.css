@@ -94,3 +94,14 @@ body {
 .contact-form button[type="submit"]:hover {
   opacity: 0.9;
 }
+
+.comment-section {
+  margin-top: 30px;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.comment-section h2 {
+  margin-bottom: 20px;
+}

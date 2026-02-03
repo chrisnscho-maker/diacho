@@ -44,3 +44,7 @@ A simple web application with a "Hello, world!" message and a button. This docum
     -   Added a `<div id="disqus_thread"></div>` element where the comments will be embedded.
     -   Included the provided Disqus JavaScript snippet, which loads the `embed.js` script from `https://krecipe.disqus.com/embed.js`, responsible for rendering the comment section.
     -   A `<noscript>` fallback message is also included.
+    -   **Update:** The Disqus script has been updated to include configuration variables (`this.page.url` and `this.page.identifier`) to improve loading reliability, especially in development environments. The entire integration has also been wrapped in a `<section class="comment-section">` with a `<h2>` for better page structure.
+
+3.  **CSS (`style.css`):**
+    -   Added styles for the `.comment-section` to provide appropriate spacing and alignment.
